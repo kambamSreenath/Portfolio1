@@ -1,0 +1,38 @@
+#education {
+    background-image: url('education-background.jpg'); /* Set the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+}
+h2 {
+    font-size: 24px;
+    color:aqua;
+    text-decoration:underline;
+}
+
+.education-item {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for each item */
+    padding: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.animated-text {
+    color: #ffcc00; /* Set initial text color */
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ffcc00;
+    }
+    100% {
+        color: #ff6600; /* Set target text color */
+    }
+}
+
+.education-item:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}

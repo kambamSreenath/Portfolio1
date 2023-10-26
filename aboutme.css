@@ -1,0 +1,61 @@
+#about {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+
+}
+#about {
+    background-image: url('#'); /* Replace 'your-image.jpg' with the image file path */
+    background-size: cover;
+    background-position: center;
+    color:#fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/* Set text color to be visible on the background */
+}
+
+h2 {
+    font-size: 24px;
+    color:aqua;
+    text-decoration:underline;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.last-paragraph {
+    margin-top: 20px;
+}
+
+.details, .experience {
+    margin-top: 20px;
+}
+
+.details h3, .experience h3 {
+    font-size: 18px;
+    color:aqua;
+    text-decoration:underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    color: #666;
+    margin: 8px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0077B5;
+}
+
+a:hover {
+    color: #00548c;
+}

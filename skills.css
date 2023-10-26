@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('skills.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#programming-skills-chart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust as needed */
+    border: none; /* Remove table border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: none; /* Remove cell borders */
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ccc;
+    height: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #27ae60; /* Default color */
+    width: 0;
+    transition: width 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+.percentage {
+    font-weight: bold;
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+    position: absolute;
+    right: 10px; /* Adjust position as needed */
+}
+
+tr:hover .skill-level {
+    width: 100%;
+    background-color: #27ae60; /* Color on hover */
+    animation: fill 1s ease-in-out;
+}
+
+@keyframes fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

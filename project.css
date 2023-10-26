@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #000; /* Set your preferred background color */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+
+
+#projects {
+    max-height: 100vh; /* Set the maximum height to fit the viewport */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('projects-background.jpg'); /* Set the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.project-item {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for each project item */
+    padding: 20px;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    perspective: 1000px; /* Add perspective for 3D effect */
+    cursor: pointer;
+}
+
+/* The rest of your CSS code remains the same */
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.project-item:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    transform: rotateY(30deg); /* 3D rotation effect on hover */
+}
+
+.project-item h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-item:hover::after {
+    content: attr(data-language); /* Display the programming language on hover */
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ff6600;
+}

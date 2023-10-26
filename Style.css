@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: -2%;
+}
+ul{
+    margin-top: -4%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease;
+}
+
+ul li a:hover{
+    color: rgb(230,104,59);
+}
+.info{
+    margin-left: 6%;
+    margin-top: 6%;
+}
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(230,104,59);
+}
+.info a{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(59,174,209);
+}
+.word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    animation: showWord 1s forwards;
+  }
+  
+  @keyframes showWord {
+    0% {
+      opacity: 0;
+      transform: translateY(1em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .pic{
+    left: 55%;
+}
+/* LinkedIn icon */
+.social-icons a[href*="linkedin.com"] i {
+    color: #0077B5;
+    margin-right: 10px; /* LinkedIn's brand color */
+}
+
+/* Instagram icon */
+.social-icons a[href*="instagram.com"] i {
+    color: #E1306C;
+    margin-right: 10px; /* Instagram's brand color */
+}
+
+/* GitHub icon */
+.social-icons a[href*="github.com"] i {
+    color: #181717; 
+    margin-right: 10px;
+     /* GitHub's brand color */
+}
+
+/* Hover effect for all icons */
+.social-icons a i:hover {
+    color: rgb(59, 174, 209); /* Hover color for all icons */
+}
+
+/* Optional: Adjust icon size */
+.social-icons a i {
+    font-size: 40px;
+}
+.social-icons {
+    position: fixed; /* Fixed position so it stays in view */
+    top: 20px; /* Adjust the top value to position it vertically */
+    right: 20px; /* Adjust the right value to position it horizontally */
+}
+body, html {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
